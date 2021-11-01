@@ -8,7 +8,7 @@ require 'recipe/laravel.php';
 set('application', 'my_project');
 
 // Project repository
-set('repository', '');
+set('repository', 'https://github.com/Equinox07/fashionrecommdersyste.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true);
@@ -23,8 +23,9 @@ set('allow_anonymous_stats', false);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');
+host('142.93.44.27')
+    ->user('avalon')
+    ->set('deploy_path', '/home/avalon/applications');
 
 // Tasks
 
